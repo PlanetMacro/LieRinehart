@@ -1,1 +1,1 @@
-# n_plectic_lean
+# Lie-Rinehart
