@@ -26,5 +26,10 @@ noncomputable def ManifoldExample {E : Type*} [NormedAddCommGroup E] [NormedSpac
     (C^∞⟮I, M; 𝓘(ℝ), ℝ⟯)
     (Derivation ℝ (C^∞⟮I, M; 𝓘(ℝ), ℝ⟯) (C^∞⟮I, M; 𝓘(ℝ), ℝ⟯)) :=
 {  ρ := LinearMap.id,
-   anchor_lie := by sorry,
-   leibniz := by sorry }
+   anchor_lie := by
+    /- Goal: ∀ (x y : Derivation ℝ C^∞⟮I, M; 𝓘(ℝ, ℝ), ℝ⟯ C^∞⟮I, M; 𝓘(ℝ, ℝ), ℝ⟯),
+  LinearMap.id ⁅x, y⁆ = ⁅LinearMap.id x, LinearMap.id y⁆ -/
+    -- We need a theorem, that the identity map on derivations commutates with the
+    -- Lie bracket
+   ,
+   leibniz := by sorry -- WE KEEP THIS FOR NOW AS SORRY; FOCUSSING ON THE FIRST}
